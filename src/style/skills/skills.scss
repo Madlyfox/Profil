@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+.skillsContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+
+  .section {
+    height: 50vh;
+    width: 100vw;
+    color: white;
+    text-align: justify;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 4rem;
+      padding: 3%;
+    }
+    @media screen and (max-width: 1080px) {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    @media screen and (max-width: 580px) {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    p {
+      width: 20%;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    .content {
+      font-size: 1.2rem;
+      p {
+        width: 20%;
+      }
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .content {
+      font-size: 1.3rem;
+      p {
+        width: 40%;
+      }
+    }
+  }
+}

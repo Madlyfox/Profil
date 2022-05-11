@@ -1,0 +1,27 @@
+.navbar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-area: 1/1/1/11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar p {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 20px;
+}
+
+.navbar p a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #161616;
+}
+
+.navbar .menu {
+  position: relative;
+  background-color: black;
+}
+/*# sourceMappingURL=navbar.css.map */

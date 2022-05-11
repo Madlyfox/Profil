@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutContainer .title {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aboutContainer .title h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .aboutContainer .title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .aboutContainer .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .title {
+    height: 40%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.aboutContainer .aboutParagraph {
+  height: 100%;
+  width: 50%;
+  color: white;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutContainer .aboutParagraph p {
+  width: 70%;
+  padding: 4%;
+  padding-bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .aboutContainer .aboutParagraph p {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .aboutContainer .aboutParagraph p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .aboutParagraph {
+    height: 60%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=about.css.map */

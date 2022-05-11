@@ -1,0 +1,159 @@
+.contactContent {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactContent .left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contactContent .left .title {
+  margin-bottom: 10%;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .contactContent .left .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contactContent .left .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contactContent .left .title {
+    font-size: 1rem;
+  }
+}
+
+.contactContent .left ul {
+  list-style: none;
+  font-size: 1.5rem;
+  padding-left: 0%;
+}
+
+.contactContent .left ul li {
+  padding-bottom: 5%;
+}
+
+.contactContent .left ul li a {
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .contactContent .left ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contactContent .left ul {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contactContent .left ul {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contactContent .left {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contactContent .right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contactContent .right .text {
+  width: 30%;
+  margin-left: 2%;
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1080px) {
+  .contactContent .right .text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contactContent .right .text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contactContent .right .text {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contactContent .right {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@1,500&display=swap");
+
+// Colors
+$bg-color: rgb(46, 42, 49);
+$dot-color: rgb(199, 188, 202);
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 35px;
+
+*,
+html {
+  margin: 0%;
+  .App {
+    background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+
+
+    height: 100vh;
+    width: 100vw;
+    .content {
+     
+      height: 100%;
+      width: 100%;
+   
+
+      
+      overflow-y: scroll ;
+      scroll-snap-type: y mandatory;
+
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+      
+      section {
+        scroll-snap-align: start;
+      }
+    }
+    .content ::-webkit-scrollbar{
+        display: none;
+      }
+  }
+}
