@@ -5,73 +5,6 @@
   display: flex;
   height: 100vh;
   width: 100vw;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.aboutContainer .title {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.aboutContainer .title h1 {
-  font-size: 6rem;
-  color: white;
-}
-
-@media screen and (max-width: 1080px) {
-  .aboutContainer .title h1 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .aboutContainer .title h1 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer .title h1 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer .title {
-    height: 40%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.aboutContainer .aboutParagraph {
-  height: 100%;
-  width: 50%;
-  color: white;
-  text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -79,10 +12,102 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.aboutContainer .aboutParagraph p {
-  width: 70%;
+.aboutContainer h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .aboutContainer h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .aboutContainer h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer h1 {
+    display: none;
+  }
+}
+
+.aboutContainer .profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 35%;
+  width: 60%;
+}
+
+.aboutContainer .profil .photo {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .profil .photo {
+    height: 30%;
+    width: 70%;
+  }
+}
+
+.aboutContainer .profil .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 5%;
+  font-size: 1.3rem;
+  color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.aboutContainer .profil ul {
+  font-size: 1.5rem;
+  color: white;
+  list-style: none;
+}
+
+.aboutContainer .profil ul li {
+  padding: 2%;
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .profil ul {
+    display: none;
+  }
+}
+
+.aboutContainer .profil .aboutParagraph {
+  color: white;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+}
+
+.aboutContainer .profil .aboutParagraph p {
   padding: 4%;
   padding-bottom: 1%;
   display: -webkit-box;
@@ -96,41 +121,40 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .aboutContainer .aboutParagraph p {
+  .aboutContainer .profil .aboutParagraph p {
     font-size: 1.2rem;
-    width: 70%;
   }
 }
 
 @media screen and (max-width: 780px) {
-  .aboutContainer .aboutParagraph p {
+  .aboutContainer .profil .aboutParagraph p {
     font-size: 1.3rem;
-    width: 70%;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .aboutContainer .aboutParagraph {
-    height: 60%;
-    width: 100%;
+  .aboutContainer .profil .aboutParagraph p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .profil {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=about.css.map */

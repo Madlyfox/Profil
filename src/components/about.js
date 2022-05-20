@@ -31,26 +31,34 @@ const About = () => {
       animate={control}
       ref={ref}
     >
-      <motion.div className="title">
-        <h1>
-          Hello,
-          <br /> I'm Stanley !
-        </h1>
+      <h1>A propos de moi :</h1>
+      <motion.div className="profil">
+        <div className="photo"></div>
+        <ul>
+          <li>Stanley</li>
+          <li>Borromée</li>
+          <li>24 ans</li>
+          <li>BAC +2</li>
+        </ul>
+        <div className="name">
+          <p>Stanley</p>
+          <p style={{ fontWeight: "bold" }}>Borromée</p>
+        </div>
+        <div className="aboutParagraph">
+          <p>
+            Jeune développeur attentif et volontaire, c'est fort de ma passion
+            pour le numérique que je me suis intéréssé d'abort à
+            l'algorithmique, puis au développement web dans le but d'en faire
+            mon métier
+          </p>
+
+          <p>
+            Ma formation et mes éxperiences m'ont apprises à donner le meilleur
+            de moi même dans un environnement exigeant de façon autonome et à
+            m'organiser dans mes projets.
+          </p>
+        </div>
       </motion.div>
-
-      <div className="aboutParagraph">
-        <p>
-          Jeune développeur attentif et volontaire, c'est fort de ma passion
-          pour le numérique que je me suis intéréssé d'abort à l'algorithmique,
-          puis au développement web dans le but d'en faire mon métier
-        </p>
-
-        <p>
-          Ma formation et mes éxperiences m'ont apprises à donner le meilleur de
-          moi même dans un environnement exigeant de façon autonome et à
-          m'organiser dans mes projets.
-        </p>
-      </div>
     </motion.div>
   )
 }

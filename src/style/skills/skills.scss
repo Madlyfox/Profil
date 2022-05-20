@@ -6,15 +6,14 @@
   width: 100vw;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .section {
-    height: 50vh;
-    width: 100vw;
+    width: 90vw;
     color: white;
-    text-align: justify;
 
     display: flex;
-    justify-content: center;
+    justify-items: space-between;
     flex-direction: column;
     align-items: center;
 
@@ -34,8 +33,23 @@
     }
     @media screen and (max-width: 580px) {
       h2 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    .section {
+      height: 35%;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .section {
+      height: 35%;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .section {
+      height: 35%;
     }
   }
 
@@ -60,7 +74,7 @@
   }
   @media screen and (max-width: 780px) {
     .content {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       p {
         width: 40%;
       }

@@ -7,7 +7,7 @@ html {
 
 * .App,
 html .App {
-  background: linear-gradient(90deg, #2e2a31 34px, transparent 1%) center, linear-gradient(#2e2a31 34px, transparent 1%) center, #c7bcca;
+  background: linear-gradient(90deg, #4a3c55 34px, transparent 1%) center, linear-gradient(#4a3c55 34px, transparent 1%) center, #c7bcca;
   background-size: 35px 35px;
   height: 100vh;
   width: 100vw;
