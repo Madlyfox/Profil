@@ -31,14 +31,29 @@
   .stanley {
     scale: 100%;
   }
-  @media screen and (max-width: 1000px) {
-    .stanley {
-      font-size: 5rem;
+  .stanley path:nth-child(1) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: anim 4s ease forwards;
+  }
+  .stanley path:nth-child(2) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: anim 4s ease forwards;
+  }
+  .stanley path:nth-child(3) {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: anim 4s ease forwards;
+  }
+  @keyframes anim {
+    to {
+      stroke-dashoffset: 0;
     }
   }
   @media screen and (max-width: 500px) {
     .stanley {
-      scale: 50%;
+      scale: 70%;
     }
   }
 }
