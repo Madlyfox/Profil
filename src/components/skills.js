@@ -17,7 +17,7 @@ const Skills = () => {
             <li>PHP</li>
             <li>JSX</li>
             <li>REACT</li>
-            <li>ANGULAR.JS</li>
+            <li>ANGULAR </li>
             <li>CSS/SCSS</li>
             <li>SQL</li>
           </ul>
@@ -28,17 +28,17 @@ const Skills = () => {
 
         <div className="content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            nisi magni eum, nostrum iste nesciunt.
+            Mon espace de travail comprends plusieur logiciels donnant une
+            multitude de possibilitées
           </p>
           <ul>
-            <li>VS CODE</li>
+            <li>VS Code</li>
             <li>Postman</li>
             <li>GitHub</li>
             <li>NodeJS</li>
             <li>Adobe XD</li>
-            <li>Adobe Illustrator</li>
             <li>MongoDB</li>
+            <li>MySQL </li>
           </ul>
         </div>
       </div>

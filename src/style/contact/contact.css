@@ -5,131 +5,50 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contactContent .title {
-  margin-bottom: 10%;
   font-size: 5rem;
 }
 
-@media screen and (max-width: 1080px) {
-  .contactContent .title {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .contactContent .title {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .contactContent .title {
-    font-size: 2rem;
-  }
-}
-
-.contactContent .text {
-  width: 70%;
+.contactContent .info {
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactContent .info .text {
+  font-size: 1.2rem;
+  width: 40%;
   text-align: justify;
 }
 
-@media screen and (max-width: 1080px) {
-  .contactContent .text {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .contactContent .text {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .contactContent .text {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .contactContent .text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.contactContent .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactContent .list ul {
+.contactContent .info .text ul {
   list-style: none;
   font-size: 1.5rem;
   padding-left: 0%;
 }
 
-.contactContent .list ul li {
+.contactContent .info .text ul li {
   padding-bottom: 5%;
 }
 
-.contactContent .list ul li a {
+.contactContent .info .text ul li a {
   color: white;
-}
-
-@media screen and (max-width: 1080px) {
-  .contactContent .list ul {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .contactContent .list ul {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .contactContent .list ul {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .contactContent .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 @media screen and (max-width: 580px) {
@@ -138,6 +57,47 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactContent .title {
+    font-size: 2rem;
+  }
+  .contactContent .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+  }
+  .contactContent .info .text {
+    font-size: 1.2rem;
+    width: auto;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .contactContent .info ul {
+    width: auto;
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+  }
+  .contactContent .info ul li {
+    padding-top: 10%;
+    width: auto;
+  }
+  .contactContent .info ul li a {
+    color: white;
   }
 }
 /*# sourceMappingURL=contact.css.map */

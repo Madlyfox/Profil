@@ -4,99 +4,66 @@
   color: white;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   .title {
-    margin-bottom: 10%;
     font-size: 5rem;
   }
-  @media screen and (max-width: 1080px) {
-    .title {
-      font-size: 4rem;
-    }
-  }
-  @media screen and (max-width: 780px) {
-    .title {
-      font-size: 3rem;
-    }
-  }
-  @media screen and (max-width: 580px) {
-    .title {
-      font-size: 2rem;
-    }
-  }
-
-  .text {
-    width: 70%;
+  .info {
+    width: 40%;
     display: flex;
-    align-items: center;
-    padding-bottom: 20%;
-    text-align: justify;
-  }
-  @media screen and (max-width: 1080px) {
+    justify-content: space-evenly;
     .text {
       font-size: 1.2rem;
-    }
-  }
-  @media screen and (max-width: 780px) {
-    .text {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (max-width: 580px) {
-    .text {
-      font-size: 1.2rem;
-    }
-  }
-
-  @media screen and (max-width: 580px) {
-    .text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  .list {
-    display: flex;
-
-    ul {
-      list-style: none;
-      font-size: 1.5rem;
-      padding-left: 0%;
-      li {
-        padding-bottom: 5%;
-
-        a {
-          color: white;
+      width: 40%;
+      text-align: justify;
+      ul {
+        list-style: none;
+        font-size: 1.5rem;
+        padding-left: 0%;
+        li {
+          padding-bottom: 5%;
+          a {
+            color: white;
+          }
         }
       }
-    }
-    @media screen and (max-width: 1080px) {
-      ul {
-        font-size: 1.2rem;
-      }
-    }
-    @media screen and (max-width: 780px) {
-      ul {
-        font-size: 1.5rem;
-      }
-    }
-    @media screen and (max-width: 780px) {
-      ul {
-        font-size: 1.2rem;
-      }
-    }
-  }
-  @media screen and (max-width: 580px) {
-    .info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }
 @media screen and (max-width: 580px) {
   .contactContent {
     flex-direction: column;
+    justify-content: center;
+    .title {
+      font-size: 2rem;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      .text {
+        font-size: 1.2rem;
+        width: auto;
+        text-align: center;
+        padding-top: 10%;
+      }
+      ul {
+        width: auto;
+        list-style: none;
+        text-align: center;
+        padding: 0%;
+        li {
+          padding-top: 10%;
+          width: auto;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
   }
 }

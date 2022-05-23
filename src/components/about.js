@@ -1,7 +1,7 @@
 import React from "react"
 import "../style/about/about.css"
 import { motion, useAnimation } from "framer-motion"
-
+import { ReactComponent as PP } from "../style/assets/pp.jpg"
 import { useInView } from "react-intersection-observer"
 
 import { useEffect } from "react"
@@ -33,16 +33,13 @@ const About = () => {
     >
       <h1>A propos de moi :</h1>
       <motion.div className="profil">
-        <div className="photo"></div>
-        <ul>
-          <li>Stanley</li>
-          <li>Borromée</li>
-          <li>24 ans</li>
-          <li>BAC +2</li>
-        </ul>
-        <div className="name">
-          <p>Stanley</p>
-          <p style={{ fontWeight: "bold" }}>Borromée</p>
+        <div className="Pp">
+          <div className="photo"></div>
+
+          <div className="name">
+            <p>Stanley</p>
+            <p style={{ fontWeight: "bold" }}>Borromée</p>
+          </div>
         </div>
         <div className="aboutParagraph">
           <p>

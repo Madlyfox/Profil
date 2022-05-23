@@ -9,9 +9,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -22,24 +22,6 @@
   color: white;
 }
 
-@media screen and (max-width: 1080px) {
-  .aboutContainer h1 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .aboutContainer h1 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer h1 {
-    display: none;
-  }
-}
-
 .aboutContainer .profil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,55 +30,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 35%;
+  height: 50%;
   width: 60%;
-}
-
-.aboutContainer .profil .photo {
-  height: 100%;
-  width: 100%;
-  border: 1px solid white;
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer .profil .photo {
-    height: 30%;
-    width: 70%;
-  }
-}
-
-.aboutContainer .profil .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  padding: 5%;
-  font-size: 1.3rem;
-  color: white;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.aboutContainer .profil ul {
-  font-size: 1.5rem;
-  color: white;
-  list-style: none;
-}
-
-.aboutContainer .profil ul li {
-  padding: 2%;
-}
-
-@media screen and (max-width: 580px) {
-  .aboutContainer .profil ul {
-    display: none;
-  }
-}
-
-.aboutContainer .profil .aboutParagraph {
-  color: white;
-  width: 90%;
+.aboutContainer .profil .Pp {
+  height: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +47,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: justify;
+}
+
+.aboutContainer .profil .Pp .photo {
+  height: 100%;
+  width: 100%;
+  border: 0.5px solid white;
+  background-image: url(../assets/pp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutContainer .profil .Pp .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 5%;
+  font-size: 1.3rem;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .aboutContainer .profil .aboutParagraph p {
@@ -120,25 +86,10 @@
   color: white;
 }
 
-@media screen and (max-width: 1080px) {
-  .aboutContainer .profil .aboutParagraph p {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .aboutContainer .profil .aboutParagraph p {
-    font-size: 1.3rem;
-  }
-}
-
 @media screen and (max-width: 580px) {
-  .aboutContainer .profil .aboutParagraph p {
-    font-size: 1.2rem;
+  .aboutContainer h1 {
+    display: none;
   }
-}
-
-@media screen and (max-width: 580px) {
   .aboutContainer .profil {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,6 +106,26 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .aboutContainer .profil .Pp {
+    height: 40%;
+    width: 70%;
+  }
+  .aboutContainer .profil .Pp .photo {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+  }
+  .aboutContainer .profil .Pp .name {
+    height: 30%;
+    width: 70%;
+    display: contents;
+  }
+  .aboutContainer .profil .aboutParagraph {
+    width: 80%;
+  }
+  .aboutContainer .profil .aboutParagraph p {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=about.css.map */
