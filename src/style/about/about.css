@@ -54,7 +54,7 @@
   width: 100%;
   border: 0.5px solid white;
   background-image: url(../assets/pp.jpg);
-  background-size: cover;
+  background-size: 150%;
   background-position: center;
 }
 
